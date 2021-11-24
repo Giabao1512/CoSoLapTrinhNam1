@@ -1,0 +1,3 @@
+﻿  BTH3-BT15.cpp
+C:\CosolaptrinhNam1\BTH3\BTH3\BTH3-BT15.cpp(7,14): warning C4804: '<': unsafe use of type 'bool' in operation
+  BTH3.vcxproj -> C:\CosolaptrinhNam1\BTH3\Debug\BTH3.exe

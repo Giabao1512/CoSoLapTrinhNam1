@@ -1,0 +1,13 @@
+﻿BTH3-BT02.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT03.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT04.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT05.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT06.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT07.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT08.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT09.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT10.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT11.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT12.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+BTH3-BT13.obj : error LNK2005: _main already defined in BTH3-BT01.obj
+C:\CosolaptrinhNam1\BTH3\Debug\BTH3.exe : fatal error LNK1169: one or more multiply defined symbols found
