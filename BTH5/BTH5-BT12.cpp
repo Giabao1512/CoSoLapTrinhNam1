@@ -1,18 +1,22 @@
 #include <iostream>
 #include <string>
+#include <conio.h>
 using namespace std;
 int main()
 {
 	int n;
 	char a;
-	string b = "12.";
-	while (b=="12.")
+	do
 	{
-		cout << b;
-		cout << "cau ";
+		cout << "Cau: ";
 		cin >> a;
-		cout << "nhap chieu cao: ";
+		cout << "Nhap chieu cao: ";
 		cin >> n;
+		while (n < 0)
+		{
+			cout << "Nhap sai, nhap lai: ";
+			cin >> n;
+		}
 		switch (a)
 		{
 		case'a':
@@ -28,8 +32,37 @@ int main()
 				cout << endl;
 			}
 			break;
+		case'b':
+			for (int i = 1; i <= n;i++)
+			{
+
+				for (int j = 1;j <= n;j++)
+				{
+					if (abs(n - j) <= (i - 1))
+					{
+						cout << "*";
+					}
+					else
+					{
+						cout << " ";
+					}
+				}
+				cout << endl;
+			}
+			break;
+		case'c':
+			for (int i = 1;i <= n;i++)
+			{
+				for (int j = 1;j <= n;j++)
+				{
+					if (i <= j)
+						cout << "*";
+				}
+				cout << endl;
+			}
+			break;
 		case'd':
-			for (int i = 1;i <=n;i++)
+			for (int i = 1;i <= n;i++)
 			{
 				for (int j = 1;j <= n;j++)
 				{
@@ -41,33 +74,30 @@ int main()
 				cout << endl;
 			}
 			break;
-		case'c':
-			for (int i = 1;i <= n;i++)
+		case'e':
+			int trai = n, phai = n;
+			for (int i = 1; i <= n; i++)
 			{
-				for (int j = 1;j <= n;j++)
+				for (int j = 1; j <= n; j++)
 				{
-					if (i<=j)
-						cout << "*";
-				}
-				cout << endl;
-			}
-			break;
-		case'b':
-			for (int i = 1;i <= n;i++)
-			{
-				for (int j = 1;j <= n;i++)
-				{
-					if (i<j&&j ==n )
+					if (j >= trai && j <= phai)
 					{
-						cout << "*";
+						cout << "*" << " ";
 					}
 					else
+					{
 						cout << " ";
-				} 
+					}
+				}
 				cout << endl;
+				trai--;
+				phai++;
 			}
 			break;
-		
 		}
-	}
+		_getch();
+		system("cls");
+	} while (n > 0);
+	return 0;
 }
+
